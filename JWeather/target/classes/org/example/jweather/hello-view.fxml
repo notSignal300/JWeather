@@ -16,7 +16,7 @@
          <image>
             <Image url="@../../../assets/backgrounds/03d.png" />
          </image></ImageView>
-      <Label fx:id="tempLabel" alignment="CENTER" layoutX="39.0" layoutY="56.0" prefHeight="84.0" prefWidth="128.0" text="20°" textFill="WHITE">
+      <Label fx:id="tempLabel" alignment="CENTER" layoutX="26.0" layoutY="57.0" prefHeight="84.0" prefWidth="173.0" text="25°" textFill="WHITE">
          <font>
             <Font name="SF Pro Text Bold" size="70.0" />
          </font>
@@ -31,22 +31,22 @@
             <Font name="SF Pro Text Regular" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="maxTempLabel" alignment="CENTER" layoutX="39.0" layoutY="150.0" prefHeight="32.0" prefWidth="55.0" text="26°" textAlignment="CENTER" textFill="WHITE">
+      <Label fx:id="maxTempLabel" alignment="CENTER" layoutX="39.0" layoutY="153.0" prefHeight="37.0" prefWidth="70.0" text="26°" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="SF Pro Text Bold" size="30.0" />
          </font>
       </Label>
-      <Label fx:id="minTempLabel" alignment="CENTER" layoutX="112.0" layoutY="150.0" prefHeight="37.0" prefWidth="55.0" text="17°" textAlignment="CENTER" textFill="WHITE">
+      <Label fx:id="minTempLabel" alignment="CENTER" layoutX="117.0" layoutY="153.0" prefHeight="37.0" prefWidth="70.0" text="17°" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="SF Pro Text Bold" size="30.0" />
          </font>
       </Label>
-      <Label fx:id="cityNameLabel" layoutX="114.0" layoutY="15.0" text="City Name, ST" textAlignment="CENTER" textFill="WHITE">
+      <Label fx:id="cityNameLabel" alignment="CENTER" layoutX="41.0" layoutY="16.0" prefHeight="19.0" prefWidth="270.0" text="City Name, ST" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="SF Pro Text Bold" size="15.0" />
          </font>
       </Label>
-      <ProgressBar fx:id="sunSlider" layoutX="427.0" layoutY="256.0" prefWidth="200.0" progress="0.0" style="-fx-accent: #FFFF00;" />
+      <ProgressBar fx:id="sunSlider" layoutX="427.0" layoutY="256.0" prefWidth="200.0" progress="0.51" style="-fx-accent: #FFFF00;" />
       <Separator layoutX="347.0" layoutY="25.0" opacity="0.3" orientation="VERTICAL" prefHeight="251.0" prefWidth="0.0" />
       <Label fx:id="sunriseLabel" alignment="CENTER" layoutX="367.0" layoutY="257.0" text="06:36" textAlignment="CENTER" textFill="WHITE">
          <font>
@@ -111,25 +111,36 @@
             <Image url="@../../../assets/winddirection.png" />
          </image>
       </ImageView>
-      <Button layoutX="1.0" layoutY="-8.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="40.0" style="-fx-padding: 5px; -fx-background-color: NONE;" text="←" textFill="WHITE">
+      <Button fx:id="backBtn" layoutX="1.0" layoutY="-8.0" mnemonicParsing="false" onAction="#goBackToStartScreen" prefHeight="0.0" prefWidth="40.0" style="-fx-padding: 5px; -fx-background-color: NONE;" text="←" textFill="WHITE">
          <font>
             <Font size="30.0" />
          </font>
       </Button>
-      <Label layoutX="474.0" layoutY="16.0" text="City Information" textFill="WHITE">
+      <Label layoutX="473.0" layoutY="18.0" text="City Information" textFill="WHITE">
          <font>
-            <Font name="SF Pro Text Medium" size="13.0" />
+            <Font name="SF Pro Text Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="latitudeLabel" alignment="CENTER" layoutX="458.0" layoutY="40.0" prefHeight="17.0" prefWidth="134.0" text="Latitude: 4.234" textFill="WHITE">
-         <font>
-            <Font name="SF Pro Text Regular" size="13.0" />
-         </font>
-      </Label>
-      <Label fx:id="longitudeLabel" alignment="CENTER" layoutX="453.0" layoutY="57.0" prefHeight="17.0" prefWidth="144.0" text="Longitude: -9.321" textFill="WHITE">
+      <Label fx:id="latitudeLabel" alignment="CENTER" layoutX="457.0" layoutY="42.0" prefHeight="17.0" prefWidth="134.0" text="Latitude: 4.234" textFill="WHITE">
          <font>
             <Font name="SF Pro Text Regular" size="13.0" />
          </font>
       </Label>
+      <Label fx:id="longitudeLabel" alignment="CENTER" layoutX="452.0" layoutY="59.0" prefHeight="17.0" prefWidth="144.0" text="Longitude: -9.321" textFill="WHITE">
+         <font>
+            <Font name="SF Pro Text Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeZoneLabel" alignment="CENTER" layoutX="424.0" layoutY="82.0" prefHeight="17.0" prefWidth="200.0" text="Local time zone: GMT-03:00" textFill="WHITE">
+         <font>
+            <Font name="SF Pro Text Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="localTimeLabel" alignment="CENTER" layoutX="452.0" layoutY="99.0" prefHeight="17.0" prefWidth="144.0" text="Local time: 15:30" textFill="WHITE">
+         <font>
+            <Font name="SF Pro Text Regular" size="13.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="25.0" arcWidth="25.0" fill="WHITE" height="110.0" layoutX="367.0" layoutY="13.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="310.0" />
    </children>
 </AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.jweather.StartScreenController">
+   <children>
+      <TextField fx:id="apiTextField" layoutX="265.0" layoutY="131.0" prefHeight="25.0" prefWidth="170.0">
+         <font>
+            <Font name="SF Pro Text Regular" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="searchBtn" layoutX="318.0" layoutY="221.0" mnemonicParsing="false" onAction="#searchWeather" text="Search">
+         <font>
+            <Font name="SF Pro Text Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="cityTextField" layoutX="265.0" layoutY="71.0" promptText="San Francisco, US">
+         <font>
+            <Font name="SF Pro Text Medium" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="268.0" layoutY="54.0" text="City name:">
+         <font>
+            <Font name="SF Pro Text Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="114.0" text="OpenWeather API key:">
+         <font>
+            <Font name="SF Pro Text Regular" size="13.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="metricRadioBtn" layoutX="224.0" layoutY="190.0" mnemonicParsing="false" selected="true" text="Metric (°C, km/h)">
+         <font>
+            <Font name="SF Pro Text Regular" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="unitSys" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="imperialRadioBtn" layoutX="353.0" layoutY="190.0" mnemonicParsing="false" text="Imperial (°F, mph)" toggleGroup="$unitSys">
+         <font>
+            <Font name="SF Pro Text Regular" size="12.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="226.0" layoutY="171.0" text="Unit system:">
+         <font>
+            <Font name="SF Pro Text Regular" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
